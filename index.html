@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="challange.js" defer></script>
+</head>
+<style>
+  *{
+    padding: 0px;
+    margin: 0px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  body{
+    display: grid;
+    height: 100vh;
+    place-items: center;
+  }
+  button{
+    color: #ffffff;
+    border-radius: 50px;
+    width: 100px;
+    padding: 4px;
+    border: none;
+    background-color: #0086cf;
+    margin-top: 10px;
+  }
+  .main{
+    text-align: center;
+  }
+</style>
+<body>
+    <div class="main">
+      <p>click the button below to see who is the acacia nets mvp</p>
+      <button id="btn">reveal mvp</button>
+    </div>
+    <script>
+      const btn_div = document.querySelector("#btn")
+      function alertMessage(){
+        let mvp = prompt("who is the mvp on acacia court")
+        if(mvp == "kham" || mvp == "Kham"){
+          alert ("yuu got it right")
+        }else{
+          alert ("yuu got it wrong Kham is the mvp")
+        }
+      }
+      btn_div.addEventListener("click", alertMessage)
+    </script>
+</body>
+</html>
